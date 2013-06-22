@@ -2,7 +2,7 @@ SimpleScalar sim-outorder simulator with DIP policy cache
 ===
 
 We implement the 
-**Dynamic Insertion Policy based on Set Dueling** (DIP-SD) from the ISCA'2007 paper [1]
+**Dynamic Insertion Policy based on Set Dueling** (DIP-SD) from the [ISCA'2007 paper][1]
 in the _SimpleScalar_(http://www.simplescalar.com/) sim-outorder simulator.
 
 - For the dedicated LRU sets and dedicated BIP sets, we dedicate 32 sets to each of these two fixed policies with the rest to be the followers. 
@@ -40,6 +40,8 @@ Example:
  # l2 data cache config, 256KB, 64-byte line, 8-way, DIP
 -cache:dl2             ul2:512:64:8:5:10:d
 ```
+
+Please further refer to a complete example configuration file _DIP-256K-8.baseline.cfg_.
 
 ## Compilation ##
 
